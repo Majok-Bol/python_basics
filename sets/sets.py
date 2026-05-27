@@ -9,6 +9,10 @@ print("Fruits: ",fruits) #Fruits:  {'banana', 'cherry', 'mango', 'apple'}
 #remove cherry
 fruits.remove("cherry")
 print('Fruits: ',fruits)
+print("\nLooping through fruits set:")
+#loop through set items
+for fruit in fruits:
+    print(fruit)
 
 second_fruits_items={"pineapple","watermelon","apple"}
 print("Second fruits items",second_fruits_items)

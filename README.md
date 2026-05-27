@@ -1,2 +1,2 @@
 # python_basics
-A collection of python exercises to learn python programming language
+A collection of python practice examples to learn python programming language

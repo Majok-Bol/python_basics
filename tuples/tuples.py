@@ -40,3 +40,38 @@ print("Check occurrence of dog: ",multiply_animals.count("dog")) #Check occurren
 #check index of tuple item
 #returns first occurrence
 print("Cat position: ",multiply_animals.index("cat")) #Cat position:  1
+
+#add item to tuple
+animal=("zebra")
+#add zebra to animals tuple
+#first convert animals tuple to list
+list_of_animals=list(animals)
+print("Type: ",type(list_of_animals)) #Type:  <class 'list'>
+#add zebra to the list with append() method
+list_of_animals.append(animal)
+#convert back to tuple
+new_tuple=tuple(list_of_animals)
+print("New tuple with zebra added: ",new_tuple) # New tuple with zebra added:  ('dog', 'cat', 'cow', 'donkey', 'zebra')
+#get type
+print("Type: ",type(new_tuple)) #Type:  <class 'tuple'>
+
+
+#remove tuple item
+#change to list
+new_list=list(new_tuple)
+print("New animal list",new_list) #New animal list ['dog', 'cat', 'cow', 'donkey', 'zebra']
+print("Type: ",type(new_list)) #Type:  <class 'list'>
+#remove item
+new_list.remove("donkey")
+#change back to tuple
+new_tuple_items=tuple(new_list)
+print("New tuple items with donkey removed: ",new_tuple_items) #New tuple items with donkey removed:  ('dog', 'cat', 'cow', 'zebra')
+
+#delete tuple
+#it deletes tuple items completely
+item_to_delete=animals
+print("Item to delete:",item_to_delete)
+#delete item
+del item_to_delete
+print("Deleted item: ",item_to_delete)
+#returns error item_to_delete not defined because it has been deleted permanently

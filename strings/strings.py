@@ -2,6 +2,8 @@
 #example
 my_name="Henry Ford"
 print("My name is : ",my_name) #My name is: Henry Ford
+#type of variable
+print("Type: ",type(my_name)) #Type:  <class 'str'>
 #looping through a string
 for character in my_name:
     print(character)

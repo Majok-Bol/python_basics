@@ -1,5 +1,7 @@
 fruits=["apple","banana","cherry","orange","mango","pineapple","straberry","guava"]
 print("Fruits: ",fruits)
+#check type of variable
+print("Type: ",type(fruits)) #Type:  <class 'list'>
 #get length of fruits variable
 print("Length: ",len(fruits)) # 8 
 #loop through fruits list

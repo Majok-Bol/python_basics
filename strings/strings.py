@@ -1,28 +1,28 @@
 '''strings in python are arrrays representing unicode characters'''
 #example
 my_name="Henry Ford"
-print("My name is : ",my_name) #output is My name is: Henry Ford
+print("My name is : ",my_name) #My name is: Henry Ford
 #looping through a string
 for character in my_name:
     print(character)
 
 #check string length
-print(len(my_name)) #output 10
+print(len(my_name)) #10
 
 #checking if a string exists
 #check if string 'Ford' exists in my_name variable
-print("Ford" in my_name) #output True
+print("Ford" in my_name) #True
 
 #check if string does not exist
-print("Jane" not in my_name) #output True
+print("Jane" not in my_name) #True
 
 #slicing strings
 #slices upto the 9th character
 print(my_name[:9]) #output Henry For
 #slices from 3rd character upto 8th character,9th character not included
-print(my_name[3:9])
+print(my_name[3:9]) #ry For
 #slices from 2nd character upto the end
-print(my_name[2:])
+print(my_name[2:]) #nry Ford
 
 
 #convert to uppercase
@@ -51,11 +51,11 @@ replaced_characters=spaced_characters.replace("F","N")
 print(replaced_characters)
 #split characters at white spaces
 split_characters=my_name.split(" ")
-print(split_characters)
+print("Split characters: ",split_characters) #['Henry', 'Ford']
 
 #check if number is a digit
 my_number="1000"
-print(my_number.isdigit())
+print("Check if number: ",my_number.isdigit()) #True
 #check if it is a string
 my_string="Python"
 print(isinstance(my_string,str)) # True
@@ -63,7 +63,7 @@ print(isinstance(my_string,str)) # True
 
 #find position of a character
 position=my_name.find("Ford") 
-print(position)# found in 6th position
+print("Position: ",position)# found in 6th position
 #check if sentence end with specific character
 print(my_name.endswith("d"))#True
 #check if sentence start with specific character
@@ -75,9 +75,9 @@ print(fruits.count("apple")) # 2
 num1=100000
 #use comma as a separator
 formatted_number=f"{num1:,}"
-print("Comma separated number: ",formatted_number)
+print("Comma separated number: ",formatted_number) #100,000
 #if the number is a string
 number="1000000000"
 #convert to int first
 formatted="{:,}".format(int(number))
-print(formatted)
+print(formatted) #1,000,000,000

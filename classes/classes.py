@@ -13,10 +13,13 @@ class User:
 user1=User("bashbytes","bash@gmail.com")
 #display results
 user1.display_info()
+# Username: bashbytes
+#Email: bash@gmail.com
 user2=User("alex","alex@gmail.com")
 #display results
 user2.display_info()
-
+#Username: alex
+#Email: alex@gmail.com
 
 
 #Inheritance
@@ -43,7 +46,9 @@ admin1=Admin(
 )
 #show results
 admin1.display_details()
-
+#Username: Bashbytes Imla
+#Email: bashbytesimla@gmail.com
+#Role: Super admin
 
 
 #method overriding
@@ -65,14 +70,18 @@ class Moderator(User2):
 #instance of user1
 user_one=User2()
 #call login method
-user_one.login()
+user_one.login() #Login successful
 
 #instance of admin 2
 admin_two=Admin2()
 #call login method
 admin_two.login()
+#Login successful
+#Opening admin panel
 
 #instance of Moderator
 moderator=Moderator()
 #call login method
 moderator.login()
+#Login successful...
+#Opening moderation tools

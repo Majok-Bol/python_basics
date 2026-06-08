@@ -52,7 +52,7 @@ admin1.display_details()
 
 
 #method overriding
-#happens when a child class provide its own versio of a method that already exist in the parent class
+#happens when a child class provide its own version of a method that already exist in the parent class
 #example
 class User2:
     def login(self):

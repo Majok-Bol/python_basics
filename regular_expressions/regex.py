@@ -63,24 +63,3 @@ phone=re.findall(r"\d{10}",contact)
 print("Phone: ",phone) #Phone:  ['0723984576', '0823123456']
 
 
-urls='''
-https://fakestoreapi.com
-https://github.com
-https://youtube.com
-https://whatsappweb.com
-https://fakestoreapi.com/products/3
-http://fakestoreapi.com/sales/3
-https://httpbin.org
-http://jwt.org
-'''
-print("URLs: ",urls)
-search_url=re.findall(r"\w+:\//\w+\.\w+",urls)
-print("URLs found: ",search_url)
-
-https_com_urls = re.findall(
-    r"^https://[^\s/]+\.com(?:/[^\s]*)?$",
-    urls,
-    re.MULTILINE
-)
-
-print(https_com_urls)
